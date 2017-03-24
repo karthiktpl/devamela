@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+		<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+        <title>Devamela</title>
+		
+		<link rel="stylesheet"  href="css/jquery.mobile-1.4.5.css" />		
+		<link rel="stylesheet"  href="css/home.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>		
+		<script src="cordova.js"></script>
+		<script src="js/queryconnect.js"></script>		
+		<script >
+		$(document).on('pageshow', '#login', function () { 		
+			$('#linkdate').click(function(){
+					$(this).addClass('ui-btn-active');
+					$('#linktemple').removeClass('ui-btn-active');
+					$('#linkpooram').removeClass('ui-btn-active');
+					
+					$('#templelist').hide();
+					$('#pooramlist').hide();
+					$('#itemlist').html('');
+					$('#datelist').slideDown('slow');
+			});	
+			$('#linktemple').click(function(){
+					$(this).addClass('ui-btn-active');
+					$('#linkdate').removeClass('ui-btn-active');
+					$('#linkpooram').removeClass('ui-btn-active');
+					
+					$('#datelist').hide();
+					$('#pooramlist').hide();
+					$('#itemlist').html('');
+					$('#templelist').slideDown('slow');
+			});
+			$('#linkpooram').click(function(){
+					$(this).addClass('ui-btn-active');
+					$('#linkdate').removeClass('ui-btn-active');
+					$('#linktemple').removeClass('ui-btn-active');
+					
+					$('#templelist').hide();
+					$('#datelist').hide();
+					$('#itemlist').html('');
+					$('#pooramlist').slideDown('slow');
+			});
+		});;		
+		</script>	
+    </head>
+    <body >
+	    <div data-role="page" id="login" data-theme="b">
+		<div data-role="header" data-position="inline" class="devaheader">
+			<img src="img/logo.png" id="logo">
+			<h1>Devamela</h1>
+			<h4>Sadhgamaya Foundation</h4>
+		</div>
+
+        <div data-role="content">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" class="ui-btn-active" id="linkdate">Dates</a></li>
+					<li><a href="#" id="linktemple">Temples</a></li>
+					<li><a href="#" id="linkpooram">Poorams</a></li>
+				</ul>
+			<div class="ui-field-contain searchfield" id="datelist">
+			12-03-2017
+			<input type="date" name="bday" max="2017-03-12">			
+			<input type="date" id="datepicker"   name="date" data-role="date" min="2017-03-12" max="2017-04-10" >
+			<button type="button" id="datesubmit" onclick="goDateSearch()" class="ui-shadow ui-btn ui-corner-all">Search</button>
+			</div>
+			<div class="ui-field-contain searchfield" id="templelist">
+
+			<select name="temple" id="templeselect" >
+		        <option value="">Select Temple</option>
+		        <option value="Triprayar Sreerama">Triprayar Sreerama</option>
+		        <option value="Chathakkudam Sastha">Chathakkudam Sastha</option>
+		        <option value="Urakam Ammathiruvadi">Urakam Ammathiruvadi</option>
+		        <option value="Cherpu Bhagavathy">Cherpu Bhagavathy</option>
+		        <option value="Aykunnu Bhagavathy">Aykunnu Bhagavathy</option>
+		        <option value="Thottippal Bhagavathy">Thottippal Bhagavathy</option>
+		        <option value="Kadalassery Pisharikkal Bhagavathy">Kadalassery Pisharikkal Bhagavathy</option>
+		        <option value="Edakkunni Bhagavathy">Edakkunni Bhagavathy</option>		
+		        <option value="Namkulam Sastha">Namkulam Sastha</option>
+		        <option value="Chakkamkulangara Sastha">Chakkamkulangara Sastha</option>
+		        <option value="Thaikkattussery Bhagavathy">Thaikkattussery Bhagavathy</option>
+		        <option value="Anthikkad Bhagavathy">Anthikkad Bhagavathy</option>
+		        <option value="Choorakkodu Bhagavathy">Choorakkodu Bhagavathy</option>
+		        <option value="Nettissery Sastha">Nettissery Sastha</option>
+		        <option value="Maattil Sastha">Maattil Sastha</option>
+		        <option value="Kodannur Sastha">Kodannur Sastha</option>
+		        <option value="Chittichathakudam Sastha">Chittichathakudam Sastha</option>
+		        <option value="Medamkulangara Sastha">Medamkulangara Sastha</option>
+		        <option value="Kalleli Sastha">Kalleli Sastha</option>
+		        <option value="Kodakara Poonilarkavu Bhagavathy">Kodakara Poonilarkavu Bhagavathy</option>
+		        <option value="Kaduppassery Bhagavathy">Kaduppassery Bhagavathy</option>
+		        <option value="Chalakkudy Pisharikkal Bhagavathy">Chalakkudy Pisharikkal Bhagavathy</option>
+		        <option value="Thiruvullakkavu Sastha">Thiruvullakkavu Sastha</option>
+		        <option value="Arattupuzha Sastha">Arattupuzha Sastha</option>
+		        <option value="Narukulangara Temple">Narukulangara Temple</option>
+		        <option value="Peruvanam Temple">Peruvanam Temple</option>
+		        <option value="Thaloor Temple">Thaloor Temple</option>
+		        <option value="Pidikkaparambu Temple">Pidikkaparambu Temple</option>
+		        <option value="Cheloor Temple">Cheloor Temple</option>
+		        <option value="Cheruvathoor Mana">Cheruvathoor Mana</option>
+		    </select>
+			<button type="button" id="templesubmit" onclick="goTempleSearch()" class="ui-shadow ui-btn ui-corner-all">Search</button>
+			</div>
+			<div class="ui-field-contain searchfield" id="pooramlist">
+			
+			<select name="pooram"  id="pooramselect">
+		        <option value="">Select Pooram</option>
+		        <option value="Peruvanam Pooram">Peruvanam Pooram</option>
+		        <option value="Arattupuzha Pooram">Arattupuzha Pooram</option>		
+		    </select>
+			<button type="button" id="pooramsubmit" onclick="goPooramSearch()" class="ui-shadow ui-btn ui-corner-all">Search</button>
+			</div>
+		</div><!-- /navbar -->
+		<div id="itemlist"></div>
+        </div>
+    </div>
+
+    </body>
+</html>
