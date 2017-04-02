@@ -14,7 +14,7 @@
 		<script src="js/jquery-2.1.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="cordova.js"></script>
-		<script src="js/queryconnect.js"></script>
+		
     </head>
     <body >
 	<nav class="navbar navbar-default">
@@ -33,36 +33,9 @@
 	
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav"> 
-		<li class="dropdown"><a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Search By Date</a>
-			<ul class="dropdown-menu">
-				<li>
-					<form class="navbar-form navbar-left" role="search">
-					<div class="form-group">
-						<input type="date" id="datepicker"   name="date"  class="form-control" min="2017-03-12" max="2017-04-10">										  
-					</div>					
-					<button type="button" id="datesubmit" onclick="goDateSearch()"  class="btn btn-default">Search</button>										
-					</form>
-				</li>
-			</ul>
-		</li>
-		<li class="dropdown">
-			<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span>
-				<input type="hidden" id="eventselect" value="">
-			</a>
-			<ul class="dropdown-menu" >
-				<li role="separator" class="divider"></li>
-				<li><a href="javascript:void(0)" class="eventlist" data-value="Flag mast hoisting">Flag mast hoisting</a></li>	
-				<li><a href="javascript:void(0)" class="eventlist" data-value="Panchaari Melam">Panchaari Melam</a></li>	
-				<li><a href="javascript:void(0)" class="eventlist" data-value="Paandi Melam">Paandi Melam</a></li>	
-				<li><a href="javascript:void(0)" class="eventlist" data-value="Panchavadyam">Panchavadyam</a></li>
-				<li><a href="javascript:void(0)" class="eventlist" data-value="Peruvanam Pooram">Peruvanam Pooram</a></li>				
-				<li><a href="javascript:void(0)" class="eventlist" data-value="Elephant Race">Elephant Race</a></li>	
-				<li><a href="javascript:void(0)" class="eventlist" data-value="Tharakkal Pooram">Tharakkal Pooram</a></li>	
-				<li><a href="javascript:void(0)" class="eventlist" data-value="Arattupuzha Pooram">Arattupuzha Pooram</a></li>				
-																
-			</ul>
-		</li>
-		<li ><a href="live.html">Live</a></li>	
+			
+		<li><a href="newhome.html">Home</a></li>		
+		<li><a href="live.html">Live</a></li>		
         <!--<li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Temples <span class="caret"></span>
 			<input type="hidden" id="templeselect" value="">
@@ -112,25 +85,10 @@
     <div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12">
-				<ul class="event-list" id="itemlist">				
-					<li>
-						<div class="info" style="text-align:center;padding-top:1em"><h2 class="title">
-						आयातु शिवलोकं नः कलाविति विलोकानात् <br>
-						चिन्तया सद्भिरारंभि देवपूरमहोत्सवः<br>
-						0 1 3 4 5 6 1 0
-						</h2>
-						<h1 class="title" style="color:#31708f">SADHGAMAYA FOUNDATION</h1>
-						</div>
-					</li>
-					<li>
-						<div class="info" style="text-align:center;padding-top:1em">
-						<h1 class="title" style="color:#31708f"><a href="live.html">Watch Live</a></h1>
-						<h4>April 05 Wednesday - Peruvanam Pooram<br>
-						April 08 Saturday - Thottippal Bhagavathy Temple
-						April 08 Saturday - Arattupuzha Pooram</h4>
-						</div>
-					</li>
-				</ul>
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="http://www.ustream.tv/embed/16107363?html5ui=1" allowfullscreen="true" webkitallowfullscreen="true" scrolling="no" frameborder="0" style="border: 0px none transparent;">    </iframe>
+					<br /><a href="http://www.ustream.tv" style="font-size: 12px; line-height: 20px; font-weight: normal; text-align: left;" target="_blank">Broadcast live streaming video on Ustream</a>								  
+				</div>
 			</div>
 		</div>
 	</div>
