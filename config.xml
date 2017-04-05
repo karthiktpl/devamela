@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-	<widget id="com.sadhgamaya.devam" versionCode = "123"  version="1.2.3" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+	<widget id="com.sadhgamaya.devam" versionCode = "124"  version="1.2.4" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Devamela</name>
     <description>
         Devamela : Complete Guide to Arattupuzha pooram.
@@ -12,8 +12,7 @@
 	<preference name="android-minSdkVersion" value="15" />
     <preference name="DisallowOverscroll" value="true"/>
 	<preference name="android-build-tool" value="gradle" />	
-	<preference name="Orientation" value="portrait" />   
-	<gap:plugin name="org.apache.cordova.network-information" source="npm" />
+	<preference name="Orientation" value="portrait" />   	
     <icon src="res/icon.png" />    
     <access origin="*" />
     <plugin name="cordova-plugin-whitelist" version="1" />
