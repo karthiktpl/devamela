@@ -66,7 +66,7 @@
 		tx.executeSql('INSERT INTO events (name,time,date,venue,temple,pareticipents,pooram,dateorder,timeorder) VALUES  ("Panchavaadyam","09 PM","30-03-2018","Triprayar Sreerama Temple","Triprayar Sreerama Temple","","","M","H")');
 		tx.executeSql('INSERT INTO events (name,time,date,venue,temple,pareticipents,pooram,dateorder,timeorder) VALUES  ("Paandi Melam","09 PM","30-03-2018","Triprayar Sreerama Temple West Gate","Triprayar Sreerama Temple","","","M","I")');
 		tx.executeSql('INSERT INTO events (name,time,date,venue,temple,pareticipents,pooram,dateorder,timeorder) VALUES  ("Paandi Melam","09.30 PM","30-03-2018","Choorakkodu Temple","Choorakkodu Temple","","","M","J")');
-		tx.executeSql('INSERT INTO events (name,time,date,venue,temple,pareticipents,pooram,dateorder,timeorder) VALUES  ("Panchaari Melam","01 PM","31-03-2018","Edakkunni Temple","Edakkunni Temple","","","M","K")');
+		tx.executeSql('INSERT INTO events (name,time,date,venue,temple,pareticipents,pooram,dateorder,timeorder) VALUES  ("Panchaari Melam","01 AM","31-03-2018","Edakkunni Temple","Edakkunni Temple","","","M","K")');
 		tx.executeSql('INSERT INTO events (name,time,date,venue,temple,pareticipents,pooram,dateorder,timeorder) VALUES  ("Panchaari Melam","08 AM","31-03-2018","Medamkulangara Temple","Medamkulangara Temple","","","N","A")');
 		tx.executeSql('INSERT INTO events (name,time,date,venue,temple,pareticipents,pooram,dateorder,timeorder) VALUES  ("Panchaari Melam","08.30 AM","31-03-2018","Kodannur Sastha Temple","Kodannur Sastha Temple","","","N","B")');		
 		tx.executeSql('INSERT INTO events (name,time,date,venue,temple,pareticipents,pooram,dateorder,timeorder) VALUES  ("Panchaari Melam","01 PM","31-03-2018","Peruvanam Temple","Peruvanam Temple","","","N","C")');
